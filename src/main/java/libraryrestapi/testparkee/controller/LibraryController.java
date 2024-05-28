@@ -21,6 +21,15 @@ public class LibraryController {
     private final LibraryService libraryService;
     private final BorrowBookService borrowBookService;
 
+    @GetMapping("/testController")
+    public ResponseEntity<ResponseDTO<String>> testController() {
+        return ResponseEntity.ok(ResponseDTO.<String>builder()
+                .statusCode(HttpStatus.OK.value())
+                .message("Test Controller")
+                .data("Test Controller")
+                .build());
+    }
+
     @PostMapping("/add")
     public ResponseEntity<ResponseDTO<BooksDTO>> addBooks(Integer isbn, @RequestBody BooksDTO booksDTO) {
         libraryService.addBooks(isbn, booksDTO);
