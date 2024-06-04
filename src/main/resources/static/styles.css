@@ -1,8 +1,7 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: whitesmoke;
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
 }
 
 header {
@@ -11,7 +10,7 @@ header {
     border-bottom: 1px solid #ddd;
 }
 
-.container {
+.container1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,17 +51,7 @@ nav ul li a {
 main {
     text-align: center;
     padding: 2em 1em;
-    background-color: powderblue;
-}
-
-.intro h2 {
-    font-size: 2em;
-    margin-bottom: 0.5em;
-}
-
-.intro p {
-    font-size: 1.2em;
-    margin-bottom: 1em;
+    background-color: white;
 }
 
 .button {
@@ -89,4 +78,77 @@ main {
 .social-links img {
     width: 24px;
     height: 24px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+#about {
+    background-color: #f5f5f5;
+    padding: 3em 1em;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+#about p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+    text-align: left;
+}
+
+.left, .right {
+    width: 45%;
+}
+
+.left h3, .right h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.left p, .right p {
+    font-size: 1em;
+    line-height: 1.6em;
+    margin-bottom: 1em;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills span {
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    margin: 0.5em;
+    font-size: 1em;
+}
+
+
+a {
+    color: #7e57c2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
