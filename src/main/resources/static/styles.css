@@ -152,3 +152,39 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+    .container1 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 0.5em 0;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .left, .right {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #about p {
+        text-align: left;
+    }
+}
