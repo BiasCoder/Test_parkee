@@ -11,6 +11,7 @@ header {
 }
 
 .container1 {
+    font-family: "Plus Jakarta Sans", sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -81,7 +82,7 @@ main {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f9fa;
@@ -152,6 +153,47 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+.contact-section{
+    margin-top: 40px;
+}
+
+.contact-section p {
+    border-bottom: 1px solid #c0c0c0;
+    padding: 10px 0;
+}
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.project-item{
+    text-align: center;
+}
+.project-image{
+    width: 100px;
+    height: 100px;
+    /*display: block;*/
+    /*object-fit: fill;*/
+}
+
+.project-item a {
+    /*display: block;*/
+    width: 100px;
+    height: 100px;
+    background-color: #c0c0c0;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.footer {
+    font-size: 9px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
 
 @media (max-width: 768px) {
     .container1 {
